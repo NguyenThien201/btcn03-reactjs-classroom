@@ -32,7 +32,100 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  grid-gap: 12px;
+}
+
+.item {
+  position: relative;
+  margin: 5px;
+  min-height: 200px;
+  align-self: center;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.addBtn {
+  position: relative;
+  margin: 5px;
+  min-height: 200px;
+  max-width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header {
+  min-height: 200px;
+  width: 100%;
+}
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;  
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.title { 
+  padding: 12px 20px; 
+  font-weight: bolder;
+  font-size: xx-large;  
+}
+
+.title2 { 
+  padding: 12px 20px;  
+  font-weight: bolder;
+  font-size: large;
+  
+}
+
+.input-field { 
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #0693E3;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+}
+
+.classname {
+  margin: 10px;
+  font-size: 40px;
+  height: 100px;
+  color: white;
+  font-weight: bolder;
+}
+
+.classStudents {
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
 }
